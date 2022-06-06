@@ -10,16 +10,74 @@ Go ahead and open your terminal application.
 ```bash
 $ brew install pyenv
 ```
+This should result in something that looks like the output below.
+```bash
+[yourusername@computername ~ % brew install pyenv
+Running `brew update --preinstall`...
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:1f50bf80583bd436c9542d4fa5ad47df0ef0f0bea22ae710c4f04c42d7560bca
+######################################################################### 100.0%
+==> Pouring portable-ruby-2.6.8_1.el_capitan.bottle.tar.gz
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+
+You have 17 outdated formulae installed.
+You can upgrade them with brew upgrade
+or list them with brew outdated.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/manifests/1.4.19
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:b22472f659112cf
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/manifests/2.71
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/autoconf/blobs/sha256:0aa64f171
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pyenv/manifests/2.3.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pyenv/blobs/sha256:d12eb7d8e4aa
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sh
+######################################################################## 100.0%
+==> Installing dependencies for pyenv: m4 and autoconf
+==> Installing pyenv dependency: m4
+==> Pouring m4--1.4.19.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/m4/1.4.19: 13 files, 724.4KB
+==> Installing pyenv dependency: autoconf
+==> Pouring autoconf--2.71.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/autoconf/2.71: 71 files, 3.2MB
+==> Installing pyenv
+==> Pouring pyenv--2.3.1.big_sur.bottle.tar.gz
+🍺  /usr/local/Cellar/pyenv/2.3.1: 925 files, 3.0MB
+==> Running `brew cleanup pyenv`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+```
+
 With Homebrew and [Pyenv](https://github.com/pyenv/pyenv) on MacOS (using zsh)
 ```bash
 $ pyenv global 3.9.10 # telling which version we are using.
+```
+What should you do if you encounter an error with the code above?
+```bash
+$ pyenv global 3.9.10 ... # if you run this line and get the output shown below, then you will need to install the correct version of pyenv.
+pyenv: version `3.9.10' not installed
+```
+To check which version is installed run the code below.
+```bash
+$ pyenv --version # As shown below, the version (in this example) is 2.3.1
+pyenv 2.3.1
+```
+[//]: <> (I am not convinced that this method of installation is straightforward. Have we considered using pip or conda instead for simplicity?)
+
+```bash
 $ pyenv versions
 $ echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 $ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
-
 Close terminal and open a new session.
+To check which version of python is installed simply run the line below.
 ```bash
 $ python --version
 ```
