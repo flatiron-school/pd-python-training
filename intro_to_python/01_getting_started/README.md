@@ -1,15 +1,24 @@
-# Intro To Python
+# Introduction To Python
 
 ## Environment Setup
+Welcome to your introduction to Python! To get started follow the steps shown below.
+We will be using `Homebrew` and `Pyenv` for this tutorial though many Pythonistas use Pip or Conda for installation and the Conda Env environment.
 
-With Homebrew and [Pyenv](https://github.com/pyenv/pyenv) on MacOS (using zsh)
+# Step One - Laying the Foundation
+Go ahead and open your terminal application.
+
 ```bash
 $ brew install pyenv
-$ pyenv global 3.9.10
+```
+With Homebrew and [Pyenv](https://github.com/pyenv/pyenv) on MacOS (using zsh)
+```bash
+$ pyenv global 3.9.10 # telling which version we are using.
 $ pyenv versions
 $ echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 $ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
+
+
 Close terminal and open a new session.
 ```bash
 $ python --version
@@ -127,7 +136,7 @@ fraction.Fraction(0, 1)
 '' # an empty str
 b'' # an empty bytes
 set() # an empty set
-# an empty range, like 
+# an empty range, like
 range(0)
 # objects for which
 obj.__bool__() returns False

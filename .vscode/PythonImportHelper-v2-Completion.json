@@ -1,0 +1,83 @@
+[
+    {
+        "label": "pdb;",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pdb;",
+        "description": "pdb;",
+        "detail": "pdb;",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "using_debugger",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "using_debugger",
+        "description": "using_debugger",
+        "detail": "using_debugger",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "intro_to_python.01_getting_started.helloworld",
+        "description": "intro_to_python.01_getting_started.helloworld",
+        "peekOfCode": "x = y = z = {'name': 'Laura'}\nme = {'firstName': 'Joe'}\nyou = {'firstName': 'Joe'}\nx = 15\ny = 15\n# MAX_N = 30\n# print(MAX_N)\n# MAX_N = 60\n# print(MAX_N)\nimport pdb; pdb.set_trace()",
+        "detail": "intro_to_python.01_getting_started.helloworld",
+        "documentation": {}
+    },
+    {
+        "label": "me",
+        "kind": 5,
+        "importPath": "intro_to_python.01_getting_started.helloworld",
+        "description": "intro_to_python.01_getting_started.helloworld",
+        "peekOfCode": "me = {'firstName': 'Joe'}\nyou = {'firstName': 'Joe'}\nx = 15\ny = 15\n# MAX_N = 30\n# print(MAX_N)\n# MAX_N = 60\n# print(MAX_N)\nimport pdb; pdb.set_trace()\n# def function():",
+        "detail": "intro_to_python.01_getting_started.helloworld",
+        "documentation": {}
+    },
+    {
+        "label": "you",
+        "kind": 5,
+        "importPath": "intro_to_python.01_getting_started.helloworld",
+        "description": "intro_to_python.01_getting_started.helloworld",
+        "peekOfCode": "you = {'firstName': 'Joe'}\nx = 15\ny = 15\n# MAX_N = 30\n# print(MAX_N)\n# MAX_N = 60\n# print(MAX_N)\nimport pdb; pdb.set_trace()\n# def function():\n    # code here",
+        "detail": "intro_to_python.01_getting_started.helloworld",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "intro_to_python.01_getting_started.helloworld",
+        "description": "intro_to_python.01_getting_started.helloworld",
+        "peekOfCode": "x = 15\ny = 15\n# MAX_N = 30\n# print(MAX_N)\n# MAX_N = 60\n# print(MAX_N)\nimport pdb; pdb.set_trace()\n# def function():\n    # code here\n# x = 15 (1111)",
+        "detail": "intro_to_python.01_getting_started.helloworld",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "intro_to_python.01_getting_started.helloworld",
+        "description": "intro_to_python.01_getting_started.helloworld",
+        "peekOfCode": "y = 15\n# MAX_N = 30\n# print(MAX_N)\n# MAX_N = 60\n# print(MAX_N)\nimport pdb; pdb.set_trace()\n# def function():\n    # code here\n# x = 15 (1111)\n# y = 4  (1111)",
+        "detail": "intro_to_python.01_getting_started.helloworld",
+        "documentation": {}
+    },
+    {
+        "label": "TestDebuggerProgram",
+        "kind": 6,
+        "importPath": "intro_to_python.02_debugging_in_python.test",
+        "description": "intro_to_python.02_debugging_in_python.test",
+        "peekOfCode": "class TestDebuggerProgram(unittest.TestCase):\n    def test_greeting(self):\n        self.assertEqual(using_debugger.greeting(), \"Hello World\", \"Should return 'Hello World'\")\n    def test_greeting_arguments(self):\n        self.assertEqual(using_debugger.greeting('Laura'), 'Hello Laura', 'Allows an optional argument')\n    def test_shopping_list(self):\n        self.assertEqual(using_debugger.shopping_list(['chips', 'fruit']), 'I need to get: chips and fruit', 'Takes a list a returns those items in a sentence')\n    def test_shopping_list_commas(self):\n        self.assertEqual(using_debugger.shopping_list(['chips', 'fruit', 'veggies']), 'I need to get: chips, fruit, and veggies', 'Adds commas if more than 2 items')\n    def test_shopping_list_oxford_commas(self):",
+        "detail": "intro_to_python.02_debugging_in_python.test",
+        "documentation": {}
+    }
+]
